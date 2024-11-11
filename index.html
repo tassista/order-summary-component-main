@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Order summary card</title>
   </style>
@@ -12,21 +15,25 @@
     <div class="hero">
       <img src="/images/illustration-hero.svg" alt="">
     </div>
-    <div class="card__text">
-      <h1 class="card__title">Order Summary</h1>
-      <p class="card__decription">You can now listen to millions of songs, audiobooks, and podcasts on any 
-        device anywhere you like!</p>
-    </div>
-    <div class="card__plan">
-      <img src="/images/icon-music.svg" alt="music note" class="icon-music">
-      <div class="plan__price">
-        <p class="plan__title">Annual Plan</p>
-        <p class="price">$59.99/year</p>
+    <div class="container">
+      <div class="card__text">
+        <p class="card__title">Order Summary</p>
+        <p class="card__decription">You can now listen to millions of songs, audiobooks, and podcasts on any
+          device anywhere you like!</p>
       </div>
-      <a href="#" class="plan__change">Change</a>
+      <div class="card__plan row">
+        <div class="row">
+          <img src="/images/icon-music.svg" alt="music note" class="icon-music">
+          <div class="plan__price">
+            <p class="plan__title">Annual Plan</p>
+            <p class="price">$59.99/year</p>
+          </div>
+        </div>
+        <a href="#" class="plan__change">Change</a>
+      </div>
+      <button class="btn">Proceed to Payment</button>
+      <a href="#" class="cancel-link">Cancel Order</a>
     </div>
-    <button class="btn">Proceed to Payment</button>
-    <a href="#" class="cancel-link">Cancel Order</a>
   </div>
 </body>
 </html>
